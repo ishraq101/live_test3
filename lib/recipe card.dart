@@ -17,6 +17,20 @@ class RecipeCard extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       elevation: 3,
       child: ListTile(
+        leading: Container(
+          width: 50,
+          height: 50,
+          decoration: BoxDecoration(
+            color: Colors.teal.shade100,
+            borderRadius: BorderRadius.circular(25),
+          ),
+          child: Center(
+            child: Text(
+              recipe.icon,
+              style: const TextStyle(fontSize: 24),
+            ),
+          ),
+        ),
         contentPadding: const EdgeInsets.all(16),
         title: Text(
           recipe.title,
